@@ -1,54 +1,55 @@
+// src/services/getAllProducts.js
 export const getAllProducts = () => {
   return [
     {
-      id: 'NAF-1-07-FMEN-001',
-      slug: 'nike-air-force-1-07-men',
-      name: "Nike Air Force 1 '07",
-      category: 'Men\'s Shoe',
-      price: 1_549_000,
-      stock: 100,
-      imageUrl: '/assets/images/AIR-FORCE-1-07.png',
-      description: `The radiance lives on in the Nike Air Force 1 '07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to make you shine.`
+      id: 'VGA-1',
+      slug: 'nvidia-geforce-rtx-3080',
+      name: "NVIDIA GeForce RTX 3080",
+      category: 'Graphics Card',
+      price: 12_000_000,
+      stock: 50,
+      imageUrl: '/assets/images/rtx-3080.png',
+      description: `The NVIDIA GeForce RTX 3080 is a powerful graphics card that delivers high performance for gaming and creative applications. It features ray tracing, AI-enhanced graphics, and high-speed performance for the latest games.`
     },
     {
-      id: 'NAF-1-07-FMEN-LV8-002',
-      slug: 'nike-air-force-1-07-lv8-men',
-      name: "Nike Air Force 1 '07 LV8",
-      category: 'Men\'s Shoe',
-      price: 1_909_000,
-      stock: 5,
-      imageUrl: `/assets/images/AIR+FORCE+1+'07+LV8.png`,
-      description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs with bold details for style that tracks whether you're on court or on the go.`
+      id: 'VGA-2',
+      slug: 'amd-radeon-rx-6800',
+      name: "AMD Radeon RX 6800",
+      category: 'Graphics Card',
+      price: 10_500_000,
+      stock: 30,
+      imageUrl: '/assets/images/rx-6800.png',
+      description: `The AMD Radeon RX 6800 offers exceptional performance for gaming and content creation, with support for ray tracing and high frame rates in the latest titles.`
     },
     {
-      id: 'NAF-1-07-FWOMEN-003',
-      slug: 'nike-air-force-1-07-women',
-      name: "Nike Air Force 1 '07",
-      category: 'Women\'s Shoe',
-      price: 1_909_000,
-      stock: 0,
-      imageUrl: `/assets/images/WMNS+AIR+FORCE+1+'07.jpeg`,
-      description: `Comfortable, durable and timeless—it's number 1 for a reason. The classic '80s construction pairs a warm suede upper with neutral accents for style that tracks whether you're on court or on the go.`
-    },
-    {
-      id: 'NAF-1-07-FMEN-004',
-      slug: 'nike-air-force-1-07-red',
-      name: "Nike Air Force 1 '07 Red",
-      category: 'Men\'s Shoe',
-      price: 1_699_000,
+      id: 'VGA-3',
+      slug: 'nvidia-geforce-rtx-3070',
+      name: "NVIDIA GeForce RTX 3070",
+      category: 'Graphics Card',
+      price: 8_000_000,
       stock: 20,
-      imageUrl: '/assets/images/AIR-FORCE-1-07-RED.png',
-      description: `Stand out in the crowd with the Nike Air Force 1 '07 Red, featuring a bold red colorway and classic silhouette.`
+      imageUrl: '/assets/images/rtx-3070.png',
+      description: `The NVIDIA GeForce RTX 3070 is designed for gamers who want high performance at a more affordable price, offering excellent frame rates and ray tracing capabilities.`
     },
     {
-      id: 'NAF-1-07-FWOMEN-005',
-      slug: 'nike-air-force-1-07-pink',
-      name: "Nike Air Force 1 '07 Pink",
-      category: 'Women\'s Shoe',
-      price: 1_749_000,
+      id: 'VGA-4',
+      slug: 'amd-radeon-rx-6700-xt',
+      name: "AMD Radeon RX 6700 XT",
+      category: 'Graphics Card',
+      price: 7_500_000,
       stock: 15,
-      imageUrl: '/assets/images/AIR-FORCE-1-07-PINK.png',
-      description: `Elevate your style with the Nike Air Force 1 '07 Pink, perfect for a chic and trendy look.`
+      imageUrl: '/assets/images/rx-6700-xt.png',
+      description: `The AMD Radeon RX 6700 XT is a mid-range graphics card that provides excellent performance for gaming at 1440p resolution, with advanced features for a smooth gaming experience.`
+    },
+    {
+      id: 'VGA-5',
+      slug: 'nvidia-geforce-rtx-3060-ti',
+      name: "NVIDIA GeForce RTX 3060 Ti",
+      category: 'Graphics Card',
+      price: 6_000_000,
+      stock: 25,
+      imageUrl: '/assets/images/rtx-3060-ti.png',
+      description: `The NVIDIA GeForce RTX 3060 Ti offers great performance for gamers looking for a budget-friendly option, capable of handling most games at high settings.`
     },
   ];
-}
+};

@@ -1,15 +1,16 @@
-import { useId } from 'react'
+import { useId } from 'react';
 import { Link } from 'react-router-dom';
-import { useUser } from '../../context/UserContext';
+import { useUser  } from '../../context/UserContext';
 
 export default function Navbar() {
-  const inputId = useId()
-  const { isLoggedIn, login, logout } = useUser();
+  const inputId = useId();
+  const { isLoggedIn, login, logout } = useUser ();
+  
   return (
-    <nav className='grid grid-cols-3 justify-between px-24 py-4 bg-[#8091FF] items-center'>
+    <nav className='grid grid-cols-3 justify-between px-24 py-4 bg-black items-center'>
         <ul>
           <li className='flex items-center justify-center'>
-            <Link to='/' className='text-[#F2F4FF] hover:text-[#565f93] active:text-[#1d2342]'>Home</Link>
+            <Link to='/' className='text-white hover:text-green-500 active:text-green-300'>Home</Link>
           </li>
         </ul>
         <ul className='flex justify-center items-center'>
@@ -19,30 +20,26 @@ export default function Navbar() {
         </ul>
         {!isLoggedIn ? (
             <ul className='flex gap-2 justify-end'>
-              <li className='text-[#F2F4FF] hover:text-[#565f93] active:text-[#1d2342]'>
-                {/* <Link to="">Sign in</Link> */}
-                <button onClick={ login}>Sign in</button>
+              <li className='text-white hover:text-green-500 active:text-green-300'>
+                <button onClick={login}>Sign in</button>
               </li>
               <li>
-                <Link className='text-[#F2F4FF] hover:text-[#565f93] active:text-[#1d2342]' to="/singup">Sign up</Link>
+                <Link className='text-white hover:text-green-500 active:text-green-300' to="/signup">Sign up</Link>
               </li>
-          </ul>
-        )
-        : (
+            </ul>
+        ) : (
             <ul className='flex justify-end gap-2'>
-              <li >
-                <Link className='text-[#F2F4FF] hover:text-[#565f93] active:text-[#1d2342]' to="/cart">
-                    Cart
-                </Link>
-              </li>
-              <li >
-                <Link to='/orders' className='text-[#F2F4FF] hover:text-[#565f93] active:text-[#1d2342]'>My Orders</Link>
+              <li>
+                <Link className='text-white hover:text-green-500 active:text-green-300' to="/cart">Cart</Link>
               </li>
               <li>
-                <button onClick={logout} className='text-[#F2F4FF] hover:text-[#565f93] active:text-[#1d2342]'>Sign out</button>
+                <Link to='/orders' className='text-white hover:text-green-500 active:text-green-300'>My Orders</Link>
+              </li>
+              <li>
+                <button onClick={logout} className='text-white hover:text-green-500 active:text-green-300'>Sign out</button>
               </li>
             </ul>
         )}
     </nav>
-  )
+  );
 }
